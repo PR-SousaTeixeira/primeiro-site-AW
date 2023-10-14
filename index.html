@@ -4,7 +4,33 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>O meu primeiro site</title>
+        <style>
+        body {
+  background-color:black;
+  color:white
+}
+h1 {
+  background-color: white;
+  color: blue;
+  text-align: center;
+  text-decoration-line: underline;
+}
+h2 {
+  background-color: white;
+  color: purple;
+  text-align: left;
+  text-decoration-line: overline;
+}
+h3 {
+  background-color: white;
+  color: orange;
+  text-align: center;
+  text-decoration-line: overline;
+}
+
+        </style>
     </head>
+
     <body>
         <h1>A minha apresentação</h1>
         <p>Olá, eu sou o Renato, estudo Comunicação Audiovisual e Multimédia na Universidade Lusófona do Porto, aprendi na cadeira de Aplicações Web a criar o meu primeiro site (mais ou menos) e é isso que vou tentar demonstrar.</p>
@@ -63,6 +89,8 @@
         <p>Um elemento HTML é definido por uma tag inicial, algum conteúdo e uma tag final</p>
         <p> <"tagname"> O conteúdo vai aqui <"/tagname"> </p>
          <p>O elemento HTML é tudo, desde a tag inicial até a tag final</p>
+
+
         <h3>Atributos</h3>
         <p>Os atributos HTML fornecem informações adicionais sobre os elementos HTML, Os atributos são sempre definidos numa lógica nome="valor", tais como:</p>
         <P>O atributo "style" permite defenir estilos de uma divisão ou de um elemento, é importante a utilização de outros atributos como "width" e "height" para defenir as proporções e "color" para defenir a cor</P>
@@ -92,13 +120,62 @@
         <input type="password" />~
         <p> A tag <"iframe"> especifica um quadro embutido. um iframe HTML é usado para exibir uma página da web dentro de uma página da web, como por exemplo <"iframe src=""url" title="descrição""></iframe></p>
         <p><iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe></p>
-        <h3>Liks</h3>
-            <p>Liks são elementos de Hyperliagação para outros elementos, possibilita saltitar de um documento para outro</p>
-            <p>São definidos com a tag <"a"> seguido inicialmente por o atributo "href=" que indica o caminho do link, finalizado pelo "titulo" do link que será a parte visível</p>
-            <p>como por exemplo "href="http://www.google.com">Google" que juntamente com a tag corresponde a <a href="http://www.google.com">Google</a> </p>
+
+        <p>Links são elementos de Hyperliagação para outros elementos, possibilita saltitar de um documento para outro</p>
+        <p>São definidos com a tag <"a"> seguido inicialmente por o atributo "href=" que indica o caminho do link, finalizado pelo "titulo" do link que será a parte visível</p>
+        <p>como por exemplo "href="http://www.google.com">Google" que juntamente com a tag corresponde a <a href="http://www.google.com">Google</a> </p>
+
+
+
+        <h3>CSS</h3>
+        <p>É o que define a página "visualmente", pode ser usado para definir cores, layout e estilos</p>
+        <p>A sintaxe de uma declaração CSS resulta em algo como:</p>
+        <p><"tag"> texto <"/tag"> (Aquela que vai ser alterada)</p>
+        <p>seletor de tag{</p>
+        <p>propriedade: Valor;(Aquilo que vai ser alterado)</p>
+        <p>}</p>
+        <p>É importante a utilização de selectores para identificar o elemento ao qual deve ser atribuido um estilo </p>
+        <p>Alguns dos seletores mais comuns são:</p>
+        <ul>
+          <li>Nome do elemento-seleciona elementos HTML com base no nome do elemento.</li>
+          <li>ID(#Id)- usa o atributo id de um elemento HTML para selecionar um elemento específico.</li>
+          <li>Classe(.class)-seleciona elementos HTML com um atributo de classe específico.</li>
+          <li>Atributo([Atributo])-leciona elementos HTML com base no atributo</li>
+          <li>tudo(*)-seleciona todos os elementos HTML na página.</li>
+        </ul>
+        <p>As formas de inserir CSS podem ser categorizadas em três formas:</p>
+        <ul>
+          <li>Inline CSS- Um estilo Inline pode ser usado para aplicar um estilo exclusivo a um único elemento, é situado na linha do proprio elemento.</li>
+          <li>Internal CSS-Pode ser usado para dar um único estilo a toda a página HTML, é situado dentro da seção da <"Head"> </li>
+          <li>External CSS-Pode ser usado para atribuir um estilo que se enconta numa sheet externa a página, é situado na secção <"Head"> e é defenido com o elemento <"link"> para referenciar a sheet externa </li>
+        </ul>
+        <p>Cascading-um estilo Inline tem prioridade sobre um estilo Internal e External</p>
+        <p>Comentarios-É possivel adicionar comentarios a uma linha de codigo que não é lida pelo browser posteriormente
+        O comentário CSS é colocado dentro do elemento <"style"> e começa com /"*e termina com *"/:(sem as aspas)</p>
+
+
+        <p>Cores: Funções e exemplos(Inline)</p>
+        <p><p style="color:orange;">Cor de Texto</p>- <"p style="color:orange;">exemplo de texto<"/p> </p>
+        <p><p style="background-color:purple;">Cor de Background-</p> <"p style="background-color:purple;">Cor de Background<"/p> </p>
+        <p><p style="border:2px solid Violet;">Cor de borda- </p> <"p style="border:2px solid Violet;">cor de borda<"/p></p>
+<p></p>
+        <p>Posições de elementos podem ser definidos como:</p>
+        <ul><li>static</li>
+        <li>Relative</li>
+        <li>absolute</li>
+        <li>fixed</li>
+        <li>sticky</li>
+      </ul>
+
+
+
+
+
+
+
+        
         <h3>Conceitos básicos</h3>
-            <p>CSS-É o que define a página "visualmente", pode ser usado para definir cores, layout e estilos</p>
-            <P>Java Script-É uma linguagem de programação que permite programar o comportamento e a interação com uma página. Com JavaScript conseguimos manipular a página, adicionar eventos, manipular dados, etc.</P>
+           <P>Java Script-É uma linguagem de programação que permite programar o comportamento e a interação com uma página. Com JavaScript conseguimos manipular a página, adicionar eventos, manipular dados, etc.</P>
         
         <h4> Sitios de onde foram retirada a informação <a href="https://aw-aula2.netlify.app/">Apresentação PowerPoint</a> e <a href="https://www.w3schools.com/">W3school</a></h4>
 
